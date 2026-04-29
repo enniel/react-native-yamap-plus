@@ -1,0 +1,25 @@
+{
+  "name": "react-native-yamap-example-expo",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "build:dev:android": "eas build --platform android --profile development",
+    "build:dev:ios": "eas build --platform ios --profile development"
+  },
+  "dependencies": {
+    "expo": "~54.0.13",
+    "expo-dev-client": "~6.0.13",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-yamap-plus": "file:.."
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "typescript": "^5.8.3"
+  }
+}

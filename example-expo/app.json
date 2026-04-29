@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "YamapExpoExample",
+    "slug": "yamap-expo-example",
+    "scheme": "yamapexpoexample",
+    "plugins": [
+      [
+        "react-native-yamap-plus",
+        {
+          "useLite": false
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ru.yamap.example.expo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to access your location."
+      }
+    },
+    "android": {
+      "package": "ru.yamap.example.expo",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    }
+  }
+}

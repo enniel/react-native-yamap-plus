@@ -43,3 +43,8 @@ buck-out/
 
 /.yarn
 /lib
+.env*
+!.env.example
+.expo
+example-expo/ios
+example-expo/android

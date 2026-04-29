@@ -47,6 +47,7 @@
     "src",
     "android",
     "ios",
+    "app.plugin.js",
     "*.podspec",
     "tsconfig.json",
     "!ios/build",
@@ -58,7 +59,8 @@
     "!**/.*"
   ],
   "workspaces": [
-    "example"
+    "example",
+    "example-expo"
   ],
   "codegenConfig": {
     "name": "RNYamapPlusSpec",

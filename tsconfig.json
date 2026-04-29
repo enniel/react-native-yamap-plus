@@ -16,6 +16,6 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": true
   },
-  "exclude": ["example", "lib", "**/node_modules", "**/Pods"],
+  "exclude": ["example", "example-expo", "lib", "**/node_modules", "**/Pods"],
   "include": ["**/*.ts", "**/*.tsx"]
 }

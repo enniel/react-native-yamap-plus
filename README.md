@@ -514,6 +514,43 @@ const Map = () => {
 Для подключения нативного модуля в приложение с expo используйте expo prebuild.
 Он выполнит eject и сгенерирует привычные папки android и ios с нативным кодом. Это позволит использовать любую библиотеку так же, как и приложение с react native cli.
 
+Библиотеку можно подключать через Expo config plugin:
+
+```json
+{
+  "expo": {
+    "plugins": [
+      [
+        "react-native-yamap-plus",
+        {
+          "useLite": false
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Разрешить приложению доступ к геопозиции."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    }
+  }
+}
+```
+
+Далее запустите:
+
+```bash
+npx expo prebuild
+```
+
+Параметры плагина:
+- `useLite` (`false` по умолчанию) — переключает SDK на Lite.
+
 # Проблемы
 
 1. В никоторых случаях в симуляторе ios может крашиться приложение с ошибкой
